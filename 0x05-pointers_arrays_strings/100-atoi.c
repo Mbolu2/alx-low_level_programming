@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _atoi - converts the first set of digits in a string to an integer,
@@ -37,4 +38,4 @@ int _atoi(char *s)
 if (sign < 0)
 	res *= sign;
 return (res);
-
+}

@@ -5,14 +5,14 @@
  * author: Elbee
  * Return: returns the last digit to calling function
  */
-int print_last_digit(int a)
+int print_last_digit(int n)
 {
-	if (a >= 0 && a <= 9)
-		return (a);
+	int last_digit = n % 10;
 
-	else 
-	{
-		a = _abs(a % 10);
-		return (a);
-	}
+	if (last_digit < 0)
+		last_digit *= -1;
+
+	_putchar(last_digit + '0');
+
+	return (last_digit);
 }
